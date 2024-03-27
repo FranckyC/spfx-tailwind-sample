@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-tailwindcss-client-side-solution",
+    "id": "e7c7b1b0-e3d0-4ae5-871e-0065b8b32752",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "spfx-tailwindcss description"
+      },
+      "longDescription": {
+        "default": "spfx-tailwindcss description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "spfx-tailwindcss Feature",
+        "description": "The feature that activates elements of the spfx-tailwindcss solution.",
+        "id": "614bbab3-6543-47db-bddc-ae21ba77139e",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-tailwindcss.sppkg"
+  }
+}
