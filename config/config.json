@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "tailwind-css-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/tailwindCssWebPart/TailwindCssWebPartWebPart.js",
+          "manifest": "./src/webparts/tailwindCssWebPart/TailwindCssWebPartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TailwindCssWebPartWebPartStrings": "lib/webparts/tailwindCssWebPart/loc/{locale}.js"
+  }
+}
