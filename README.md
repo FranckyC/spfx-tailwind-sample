@@ -4,6 +4,11 @@
 
 Demonstrates how to configure and use TailwindCSS in a SPFx project.
 
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Tailwind_CSS_logo.svg/2560px-Tailwind_CSS_logo.svg.png"/>
+</p>
+
 ## Used SharePoint Framework Version
 
 ![version](https://img.shields.io/badge/version-1.18.2-green.svg)
@@ -17,13 +22,14 @@ Demonstrates how to configure and use TailwindCSS in a SPFx project.
 
 ## Prerequisites
 
-- Node.js 18+
+- Node.js v18+
+- Visual Studio Code
 
 ## Solution
 
 | Solution    | Author(s)                                               |
 | ----------- | ------------------------------------------------------- |
-| folder name | Franck Cornu, Ubisoft Montréal |
+| spfx-tailwind-sample| [Franck Cornu](https://www.linkedin.com/in/franckcornu/), Ubisoft Montréal |
 
 ## Version history
 
@@ -49,13 +55,11 @@ Demonstrates how to configure and use TailwindCSS in a SPFx project.
 
 ## Features
 
-Description of the extension that expands upon high-level summary above.
+This solution illustrates the following concepts:
 
-This extension illustrates the following concepts:
-
-- Configuring TailwindCSS in your project.
-- Use classes in your project
-- Handle theme with CSS variables. 
+- Configuring TailwindCSS with SPFx.
+- Use TailwindCSS classes in your project
+- Handle light/dark mode with CSS variables. 
 
 ## References
 
