@@ -15,6 +15,8 @@ import { ITailwindCssWebPartProps } from './components/ITailwindCssWebPartProps'
 export interface ITailwindCssWebPartWebPartProps {
   description: string;
 }
+import '../../styles/dist/tailwind.css';
+import { ThemeCSSVariables } from '../../styles/variables';
 
 export default class TailwindCssWebPartWebPart extends BaseClientSideWebPart<ITailwindCssWebPartWebPartProps> {
 
@@ -41,8 +43,6 @@ export default class TailwindCssWebPartWebPart extends BaseClientSideWebPart<ITa
       this._environmentMessage = message;
     });
   }
-
-
 
   private _getEnvironmentMessage(): Promise<string> {
     if (!!this.context.sdks.microsoftTeams) { // running in Teams, office.com or Outlook
@@ -82,11 +82,13 @@ export default class TailwindCssWebPartWebPart extends BaseClientSideWebPart<ITa
     } = currentTheme;
 
     if (semanticColors) {
-      this.domElement.style.setProperty('--bodyText', semanticColors.bodyText || null);
-      this.domElement.style.setProperty('--link', semanticColors.link || null);
-      this.domElement.style.setProperty('--linkHovered', semanticColors.linkHovered || null);
+        this.domElement.style.setProperty(ThemeCSSVariables.colorPrimary, currentTheme?.palette?.themePrimary || null);
+        this.domElement.style.setProperty(ThemeCSSVariables.fontFamilyPrimary, currentTheme?.fonts?.medium?.fontFamily || null);
+        this.domElement.style.setProperty(ThemeCSSVariables.bodyText, semanticColors.bodyText || null);
+        this.domElement.style.setProperty(ThemeCSSVariables.link, semanticColors.link || null);
+        this.domElement.style.setProperty(ThemeCSSVariables.linkHover, semanticColors.linkHovered || null);
+        this.domElement.style.setProperty(ThemeCSSVariables.background, semanticColors.bodyBackground || null); 
     }
-
   }
 
   protected onDispose(): void {
