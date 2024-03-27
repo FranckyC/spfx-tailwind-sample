@@ -4,9 +4,8 @@
 
 Demonstrates how to configure and use TailwindCSS in a SPFx project.
 
-
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Tailwind_CSS_logo.svg/2560px-Tailwind_CSS_logo.svg.png"/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tailwindcss-logotype-white.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/tailwindcss-logotype.svg"><img alt="Ubisoft Logo" src="./assets/tailwindcss-logotype.svg"/></picture>
 </p>
 
 ## Used SharePoint Framework Version
