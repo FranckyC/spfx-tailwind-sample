@@ -2,14 +2,14 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  mode: 'jit',
+  mode: 'jit', // allow to update CSS classes automatically when a file is updated (watch mode)
   content: {
     files: [
-      './src/**/*.{html,ts,tsx}',
+      './src/**/*.{html,ts,tsx}', // scan for these files in the solution
     ]
   },
   corePlugins: {
-    preflight: false, // Will conflict with base SPFx styles otherwise (ex: buttons background-color)
+    preflight: false, // to avoid conflict with base SPFx styles otherwise (ex: buttons background-color)
   },
   darkMode: 'class',
   theme: {
@@ -19,7 +19,7 @@ module.exports = {
         },
         colors: {
 
-          /* Light/Dark is controlled by the theme at WebPart level */
+          /* light/dark is controlled by the theme values at WebPart level */
           primary: "var(--myWebPart-primary, #7C4DFF)",
           background: "var(--myWebPart-background, #F3F5F6)",
           link: "var(--myWebPart-link, #1E252B)",
@@ -29,6 +29,6 @@ module.exports = {
     }
   },
   plugins: [
-    require('@tailwindcss/forms'), // To be able to style inputs
+    require('@tailwindcss/forms'), // to be able to style inputs
   ],
 };

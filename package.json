@@ -8,8 +8,11 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "gulp bundle",
+    "build:ship": "gulp bundle --ship",
     "clean": "gulp clean",
     "test": "gulp test",
+    "bundle": "npm-run-all taildwindcss build",
+    "bundle:ship": "npm-run-all taildwindcss build:ship",
     "webpack:serve": "fast-serve",
     "serve": "npm-run-all -p tailwindcss:watch webpack:serve",
     "taildwindcss":  "tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/dist/tailwind.css --minify --postcss ./src/styles/postcss.config.js",
